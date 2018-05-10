@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Pagina personala</title>
+		
+			<script language="JavaScript">
+				<!-- Begin
+				var RNumber;						
+				function Init(){
+					RNumber =  Math.round(Math.abs(Math.sin(Math.random(100)) * 100)) % 100;
+					numarDeIncercari = 0;
+					document.getElementById('Input').value = "";
+				}
+				
+				function Game() {
+				numarDeIncercari++;
+				var number = document.getElementById('Input').value;
+				if (number == '') alert("Se asteapta un numar");
+				else
+					if(number==RNumber) {						
+						alert ('Ai ghicit din ' + numarDeIncercari + ' incercari! Numarul era ' + number);
+						document.getElementById('Input').value = "";
+						Init();
+					}
+					else {
+					   if (RNumber > number) {
+						 alert ('Numarul la care m-am gandit e mai mare');
+					   } else {
+						 alert ('Numarul la care m-am gandit e mai mic');
+					   }
+					}						   
+				}
+				// End -->
+			</script>	
+		
+	</head>
+
+<body onload="Init()">
+ 
+ 
+ <div id="page">
+		<div id="top">
+        	<a href="#"><img src="contact_us.png" alt="Contact Us" title="Contact Us"/></a>
+        </div>
+        
+        <div id="header">
+        	<h1>JOC - GHICESTE NUMARUL</h1>
+            <h2>introdu un numar si vezi daca este numarul pe care l-a ales calculatorul</h2>
+   </div>
+        
+        <div class="links">
+        	Quick Links:
+        	<a href="https://codecombat.com/" >Jocul meu favorit</a> | 
+        	<a href="ghiceste.html" >Joc - Ghiceste numarul</a> | 
+           	<a href="https://www.pexels.com/search/nature/" >Poze cu natura</a> | 
+        	<a href="Povesti.html" >Povesti</a>
+        </div>
+        
+        <div id="content">
+        	<div class="content_top">
+            	<h1>Ghiceste!</h1>
+            </div>
+            <div class="content_instance">
+				
+					<center>
+						<form name="FGame">
+							<div class="game_instance">
+								<br>
+								<p>Am ales un numar intre 1 si 100. Incearca sa il ghicesti</p>
+								<br><br>
+								<input type="text" id="Input" value="" Size="20">
+								<input type="button" name="DoIt" value=" Verifica " onClick="Game()"> Apasa ca sa verifici daca numarul dat este corect! <br> 
+								<br><br><br>
+								<input type="button" id="init" Value="      (Re)Incepe jocul    " OnClick="Init()">
+							<div class="game_instance">
+						</form>
+					</center>
+				</div>
+            </div> 
+        <div id="footer"><a href="http://www.bryantsmith.com/template">XHTML Templates</a> by <a href="http://www.bryantsmith.com">web page designer</a></div>                
+    </div>
+        
+</body>
+</html>
